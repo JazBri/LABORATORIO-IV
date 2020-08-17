@@ -12,7 +12,12 @@
   form {
     max-width: 500px;
     background: #f4f7f8;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;    
     border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-left: 40%;
+    margin-top: 20px;
   }
   
   h1 {
@@ -63,3 +68,40 @@
     }
   
   }
+
+
+  .title{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 10px;
+  }
+
+  .badge{
+    margin-left: 8px;
+  }
+
+  .btn{
+    margin: 2%;
+    width: 45%;
+
+  }
+.ps{
+  font-weight: bold;
+}
+
+  .content{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.form-control, .input-group{
+   margin-top: -10px;
+}
+
+.checkbox{
+ margin-right: 100px;
+}
+
+.inputInterest{
+  margin-bottom: 0;
+}

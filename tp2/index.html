@@ -1,20 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="baseStyle.css" rel= "stylesheet" type="text/css">
-    <title>Document</title>
-</head>
-<body>
-    <form action="ejemplo.php" method="GET">
-        <div class="number">
-            <label>Name: <input type="text" id="name" placeholder="Name"/></label>
-            <label>Birthday: <input type="date" id="birthday" placeholder="Birthday"/></label>
-            <label> Email: <input type="email" id="email" placeholder="E-mail"/></label>
-            <label>Password: <input type="password" id="password" placeholder="Password"/></label>
-            <button>Submit</button>
-        </div>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="baseStyle.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="ejemplo.php" method="GET">
+            <form class="number">
+                <h1 class="title">Contact Form</h1>
+                <div class="content">
+                    <p class="badge badge-pill badge-success">1</p>
+                    <span class="ps">Your basic info</span>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputName"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="inputPassword"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputBirthday">Birthday</label>
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="inputBirthday"
+                        />
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        Sex:
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2"
+                            >Male</label
+                        >
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2"
+                            >Female</label
+                        >
+                    </div>
+                    <br /><br />
+                    <p class="badge badge-pill badge-success">2</p>
+                    <span class="ps">Your profile</span>
+                    <div class="form-group">
+                        <label for="inputAbout">About you</label>
+                        <input
+                            type="tect"
+                            class="form-control"
+                            id="inputAbout"
+                        />
+                    </div>
+
+                    <label for="inputRole">Role</label>
+                    <div class="input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect03">
+                            <option value="1">Front-End Developer</option>
+                            <option value="2">Back-End Developer</option>
+                            <option value="3">Testing Developer</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox">
+                        <label class="inputInterest">Interests</label>
+                        <br />
+                        <input type="checkbox" name="checkbox" id="checkbox1" />
+                        <label for="checkbox1">Data Base 1</label>
+
+                        <input
+                            type="checkbox"
+                            name="checkbox2"
+                            id="checkbox2"
+                        />
+                        <label for="checkbox2">Design</label>
+
+                        <input
+                            type="checkbox"
+                            name="checkbox3"
+                            id="checkbox3"
+                        />
+                        <label for="checkbox3">Business</label>
+
+                        <input
+                            type="checkbox"
+                            name="checkbox4"
+                            id="checkbox4"
+                        />
+                        <label for="checkbox4">Unit Test</label>
+
+                        <input
+                            type="checkbox"
+                            name="checkbox5"
+                            id="checkbox5"
+                        />
+                        <label for="checkbox5">Cloud Development</label>
+
+                        <input
+                            type="checkbox"
+                            name="checkbox6"
+                            id="checkbox6"
+                        />
+                        <label for="checkbox6">Web Development</label>
+                    </div>
+                </div>
+                <a
+                    href="#"
+                    class="btn btn-primary btn-lg disabled btn-success"
+                    role="button"
+                    aria-disabled="true"
+                    >Send</a
+                >
+                <a
+                    href="#"
+                    class="btn btn-primary btn-lg disabled btn-success"
+                    role="button"
+                    aria-disabled="true"
+                    >Reset</a
+                >
+            </form>
+        </form>
+    </body>
 </html>
